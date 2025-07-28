@@ -10,50 +10,50 @@ export type WishlistItemType = {
 export const wishlistItems: WishlistItemType[] = [
   {
     id: 1,
-    name: 'High-Quality Standing Desk',
-    description: 'An electric standing desk with memory presets. Helps with posture during long work hours.',
-    url: 'https://www.upliftdesk.com/uplift-v2-standing-desk-v2-or-v2-commercial/',
-    price: 799,
-    imageUrl: 'https://www.upliftdesk.com/content/img/category/uplift-v2-standing-desk-v2-or-v2-commercial-2019-09-03.jpg'
+    name: 'Bow',
+    description: 'A bow',
+    url: 'https://a.co/d/5uuAN8J',
+    price: 115,
+    imageUrl: 'https://m.media-amazon.com/images/I/61UyMZG18gL._AC_SX679_.jpg'
   },
   {
     id: 2,
-    name: 'Ergonomic Office Chair',
-    description: 'A comfortable and supportive chair for long sessions of work or gaming, with adjustable lumbar support.',
-    url: 'https://store.hermanmiller.com/gaming-chairs/embody-gaming-chair/2517590.html',
-    price: 1795,
-    imageUrl: 'https://store.hermanmiller.com/dw/image/v2/BBBF_PRD/on/demandware.static/-/Sites-herman-miller-master-catalog/default/dw1b48995a/herman-miller/chairs/embody-gaming-chair/embody_gaming_chair_black_cyan.jpg?sw=600&sh=600&sm=fit'
+    name: 'Russian Hat',
+    description: 'A Russian Hat',
+    url: 'https://a.co/d/2mPkPVb',
+    price: 95,
+    imageUrl: 'https://m.media-amazon.com/images/I/51xoDJ-9wNL._AC_SX679_.jpg'
   },
   {
     id: 3,
-    name: 'Noise-Cancelling Headphones',
-    description: 'Wireless over-ear headphones with active noise cancellation to help focus in noisy environments.',
-    url: 'https://www.sony.com/electronics/headband-headphones/wh-1000xm5',
+    name: 'Beats Powerbeats Pro 2',
+    description: 'Beats Powerbeats Pro 2',
+    url: 'https://a.co/d/7UfIpKH',
     price: 399,
-    imageUrl: 'https://www.sony.com/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&wid=660&hei=660&bgcolor=F1F5F9'
+    imageUrl: 'https://m.media-amazon.com/images/I/51HOUQVBlsL._AC_SX679_.jpg'
   },
   {
     id: 4,
     name: 'Mechanical Keyboard',
-    description: 'A tactile and satisfying keyboard for typing. Preferably with hot-swappable switches.',
-    url: 'https://www.keychron.com/products/keychron-q1-pro-qmk-via-wireless-custom-mechanical-keyboard',
-    price: 199,
-    imageUrl: 'https://www.keychron.com/cdn/shop/products/Keychron-Q1-Pro-QMK-VIA-wireless-custom-mechanical-keyboard-for-Mac-Windows-Linux-with-knob-black-1_1800x1800.jpg?v=1679478807'
+    description: 'A mechanical keyboard',
+    url: 'https://a.co/d/eAUb05B',
+    price: 479,
+    imageUrl: 'https://m.media-amazon.com/images/I/71IxReOfAWL._AC_SX679_.jpg'
   },
   {
     id: 5,
-    name: '4K Ultrawide Monitor',
-    description: 'A large, high-resolution monitor to improve productivity and provide an immersive experience.',
-    url: 'https://www.dell.com/en-us/shop/dell-ultrasharp-40-curved-wuhd-monitor-u4025qw/apd/210-bmdp/monitors-monitor-accessories',
-    price: 2399,
-    imageUrl: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/peripherals/output-devices/dell/monitors/u-series/u4025qw/media-gallery/monitor-u4025qw-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=573&qlt=100,0&resMode=sharp2&size=573,402'
+    name: 'Book The Legend of Zelda',
+    description: 'The Legend of Zelda',
+    url: 'https://a.co/d/iFbOYON',
+    price: 19,
+    imageUrl: 'https://m.media-amazon.com/images/I/91GPUnqBe+L._SY425_.jpg'
   },
   {
     id: 6,
-    name: 'A Good Book on Design',
-    description: '"The Design of Everyday Things" by Don Norman. A classic on user-centered design.',
-    url: 'https://www.nngroup.com/books/design-of-everyday-things-revised/',
+    name: 'Sound hole guiatar strap',
+    description: 'No link, just any that looks cool',
+    url: 'https://www.google.com/search?q=Sound+hole+guiatar+strap',
     price: 30,
-    imageUrl: 'https://www.nngroup.com/img/covers/books/doet-revised-social-media.png'
+    imageUrl: 'https://i.ytimg.com/vi/MauZO2n9GkQ/maxresdefault.jpg'
   },
 ];
