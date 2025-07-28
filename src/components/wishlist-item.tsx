@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import type { WishlistItemType } from '@/lib/wishlist-data';
-import { getThumbnailAction } from '@/app/actions';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -41,6 +40,13 @@ export function WishlistItem({ item }: { item: WishlistItemType }) {
     };
   }, [item.url, item.description]);
 
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    }).format(price);
+  };
+
   return (
     <Card className={`flex flex-col transition-opacity duration-500 ease-in-out ${hasFadeIn ? 'opacity-100' : 'opacity-0'}`}>
       <CardHeader>
@@ -67,6 +73,11 @@ export function WishlistItem({ item }: { item: WishlistItemType }) {
           )}
         </div>
         <CardDescription>{item.description}</CardDescription>
+        {item.price && (
+          <p className="text-lg font-semibold text-foreground">
+            {formatPrice(item.price)}
+          </p>
+        )}
       </CardContent>
       <CardFooter>
         <Button asChild className="w-full" variant="default">
