@@ -6,7 +6,7 @@ export default function Home() {
     <main className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
       <header className="text-center mb-12">
         <h1 className="text-4xl font-headline font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-          My Wishlist
+          My Wishlist App
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
           A curated collection of things I'd love to have.
