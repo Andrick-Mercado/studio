@@ -4,30 +4,16 @@ import { useState, useEffect } from 'react';
 import type { WishlistItemType } from '@/lib/wishlist-data';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Skeleton } from '@/components/ui/skeleton';
 import { Gift, ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export function WishlistItem({ item }: { item: WishlistItemType }) {
-  const [thumbnailUrl, setThumbnailUrl] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
   const [hasFadeIn, setHasFadeIn] = useState(false);
+  const [imageSrc, setImageSrc] = useState(item.imageUrl || 'https://placehold.co/600x400.png');
 
   useEffect(() => {
     let isMounted = true;
-    
-    // The thumbnail fetching logic is kept for structure, but it will always result in a placeholder.
-    async function fetchThumbnail() {
-        if (isMounted) {
-          // No need to call the action, we will just use the placeholder.
-          setThumbnailUrl(null);
-          setIsLoading(false);
-        }
-    }
-
-    fetchThumbnail();
-
     const timer = setTimeout(() => {
         if (isMounted) {
             setHasFadeIn(true);
@@ -38,8 +24,8 @@ export function WishlistItem({ item }: { item: WishlistItemType }) {
       isMounted = false;
       clearTimeout(timer);
     };
-  }, [item.url, item.description]);
-
+  }, []);
+  
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
@@ -59,18 +45,15 @@ export function WishlistItem({ item }: { item: WishlistItemType }) {
       </CardHeader>
       <CardContent className="flex-grow space-y-4">
         <div className="aspect-video w-full overflow-hidden rounded-md bg-muted">
-          {isLoading ? (
-            <Skeleton className="h-full w-full" />
-          ) : (
             <Image
-              src={thumbnailUrl || `https://placehold.co/600x400.png`}
+              src={imageSrc}
               alt={`Thumbnail for ${item.name}`}
               width={600}
               height={400}
               className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
               data-ai-hint="product photo"
+              onError={() => setImageSrc('https://placehold.co/600x400.png')}
             />
-          )}
         </div>
         <CardDescription>{item.description}</CardDescription>
         {item.price && (

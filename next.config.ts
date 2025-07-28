@@ -16,6 +16,30 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.upliftdesk.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'store.hermanmiller.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.sony.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.keychron.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.dell.com',
+      },
+       {
+        protocol: 'https',
+        hostname: 'www.nngroup.com',
+      },
     ],
   },
 };
