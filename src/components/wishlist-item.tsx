@@ -18,25 +18,13 @@ export function WishlistItem({ item }: { item: WishlistItemType }) {
   useEffect(() => {
     let isMounted = true;
     
+    // The thumbnail fetching logic is kept for structure, but it will always result in a placeholder.
     async function fetchThumbnail() {
-      try {
-        const result = await getThumbnailAction({
-          url: item.url,
-          itemDescription: item.description,
-        });
         if (isMounted) {
-          setThumbnailUrl(result.thumbnailDataUri);
-        }
-      } catch (error) {
-        console.error('Failed to generate thumbnail:', error);
-        if (isMounted) {
+          // No need to call the action, we will just use the placeholder.
           setThumbnailUrl(null);
-        }
-      } finally {
-        if (isMounted) {
           setIsLoading(false);
         }
-      }
     }
 
     fetchThumbnail();
