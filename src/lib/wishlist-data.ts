@@ -29,7 +29,7 @@ export const wishlistItems: WishlistItemType[] = [
     name: 'Beats Powerbeats Pro 2',
     description: 'Beats Powerbeats Pro 2',
     url: 'https://a.co/d/7UfIpKH',
-    price: 399,
+    price: 249,
     imageUrl: 'https://m.media-amazon.com/images/I/51HOUQVBlsL._AC_SX679_.jpg'
   },
   {
@@ -55,5 +55,13 @@ export const wishlistItems: WishlistItemType[] = [
     url: 'https://www.google.com/search?q=Sound+hole+guiatar+strap',
     price: 30,
     imageUrl: 'https://i.ytimg.com/vi/MauZO2n9GkQ/maxresdefault.jpg'
+  },
+  {
+    id: 7,
+    name: 'Book The Simple Path to Wealth',
+    description: 'Book The Simple Path to Wealth',
+    url: 'https://a.co/d/aApOamo',
+    price: 30,
+    imageUrl: 'https://m.media-amazon.com/images/I/81DTZD2i93L._SY466_.jpg'
   },
 ];
