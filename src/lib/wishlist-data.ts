@@ -61,7 +61,7 @@ export const wishlistItems: WishlistItemType[] = [
     name: 'Book The Simple Path to Wealth',
     description: 'Book The Simple Path to Wealth',
     url: 'https://a.co/d/aApOamo',
-    price: 30,
+    price: 22,
     imageUrl: 'https://m.media-amazon.com/images/I/81DTZD2i93L._SY466_.jpg'
   },
 ];
